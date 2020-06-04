@@ -1249,7 +1249,8 @@
         {
           "entity": "Local_Plantao",
           "namespace": "app.entity.Local_Plantao",
-          "alias": "l"
+          "alias": "l",
+          "name": "Local_Plantao"
         }
       ],
       "rulesSelect": [
@@ -1313,7 +1314,8 @@
         {
           "entity": "Agenda",
           "namespace": "app.entity.Agenda",
-          "alias": "a"
+          "alias": "a",
+          "name": "Agenda"
         }
       ],
       "rulesSelect": [
@@ -1883,7 +1885,8 @@
         {
           "entity": "Agenda",
           "namespace": "app.entity.Agenda",
-          "alias": "a"
+          "alias": "a",
+          "name": "Agenda"
         }
       ],
       "rulesSelect": [
@@ -1977,7 +1980,8 @@
         {
           "entity": "Agenda",
           "namespace": "app.entity.Agenda",
-          "alias": "a"
+          "alias": "a",
+          "name": "Agenda"
         }
       ],
       "rulesSelect": [
@@ -2146,7 +2150,8 @@
         {
           "entity": "Agenda",
           "namespace": "app.entity.Agenda",
-          "alias": "a"
+          "alias": "a",
+          "name": "Agenda"
         }
       ],
       "rulesSelect": [
@@ -2861,7 +2866,8 @@
         {
           "entity": "Agenda",
           "alias": "a",
-          "namespace": "app.entity.Agenda"
+          "namespace": "app.entity.Agenda",
+          "name": "Agenda"
         }
       ],
       "rulesSelect": [
@@ -3062,17 +3068,7 @@
       "rulesOrderBy": [],
       "rules": {
         "condition": "AND",
-        "rules": [
-          {
-            "id": "a.local_Plantao.nm_local_lpl",
-            "field": "a.local_Plantao.nm_local_lpl",
-            "type": "string",
-            "input": "text",
-            "operator": "equal",
-            "value": "CTI C",
-            "valueIsField": false
-          }
-        ],
+        "rules": [],
         "not": true,
         "valid": true
       },
@@ -3122,7 +3118,9 @@
       "actions": null,
       "responsible": null,
       "local_Plantao": null,
-      "corSemana": null
+      "corSemana": null,
+      "diaSemana": null,
+      "medicoAnterior": null
     },
     "defaultValuesProperties": {
       "id": null,
@@ -3140,7 +3138,9 @@
       "actions": null,
       "responsible": null,
       "local_Plantao": null,
-      "corSemana": null
+      "corSemana": null,
+      "diaSemana": null,
+      "medicoAnterior": null
     },
     "security": {
       "id": null,
@@ -3158,7 +3158,9 @@
       "actions": null,
       "responsible": null,
       "local_Plantao": null,
-      "corSemana": null
+      "corSemana": null,
+      "diaSemana": null,
+      "medicoAnterior": null
     },
     "calcFields": {},
     "calcFieldsSecurity": {},
@@ -3168,5 +3170,95 @@
       "foreignKey": null
     },
     "serviceUrl": "api/cronapi/odata/v2/app/query783122/"
+  },
+  "query850469": {
+    "customId": "query850469",
+    "queryName": "CTI ABD",
+    "sourceType": "entityFullName",
+    "baseEntity": null,
+    "blockly": null,
+    "entitySimpleName": "Horario_Escala",
+    "entityFullName": "app.entity.Horario_Escala",
+    "query": {
+      "isValid": true,
+      "isEmpty": false,
+      "operationType": "object",
+      "type": "select",
+      "rulesEntity": [
+        {
+          "entity": "Horario_Escala",
+          "namespace": "app.entity.Horario_Escala",
+          "alias": "h"
+        }
+      ],
+      "rulesSelect": [
+        {
+          "func": "sum",
+          "field": "h.qt_horas_hre",
+          "type": "integer"
+        }
+      ],
+      "rulesGroupBy": [],
+      "rulesHaving": [],
+      "rulesOrderBy": [],
+      "rules": {
+        "condition": "AND",
+        "rules": [],
+        "not": false,
+        "valid": true
+      },
+      "isRawSql": false,
+      "multiTenant": false,
+      "paginatorAutomatic": false,
+      "pagination": false
+    },
+    "queryParamsValues": [],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": null,
+      "POST": true,
+      "POSTAuthorities": null,
+      "PUT": true,
+      "PUTAuthorities": null,
+      "DELETE": true,
+      "DELETEAuthorities": null,
+      "FILTER": true,
+      "FILTERAuthorities": null,
+      "COUNT": true,
+      "COUNTAuthorities": null
+    },
+    "events": {
+      "beforeInsert": null,
+      "beforeUpdate": null,
+      "beforeDelete": null,
+      "afterInsert": null,
+      "afterUpdate": null,
+      "afterDelete": null,
+      "onNavigate": null,
+      "onGetData": null
+    },
+    "defaultValues": {
+      "id": null,
+      "nm_horario_hre": null,
+      "qt_horas_hre": null
+    },
+    "defaultValuesProperties": {
+      "id": null,
+      "nm_horario_hre": null,
+      "qt_horas_hre": null
+    },
+    "security": {
+      "id": null,
+      "nm_horario_hre": null,
+      "qt_horas_hre": null
+    },
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {
+      "primaryKey": null,
+      "foreignKey": null
+    },
+    "serviceUrl": "api/cronapi/odata/v2/app/query850469/"
   }
 }

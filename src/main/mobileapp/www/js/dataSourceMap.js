@@ -16,6 +16,7 @@ window.dataSourceMap["app.Role"] = { customId: "app.entity.Role", serviceUrl: "a
 window.dataSourceMap["app.Medico"] = { customId: "app.entity.Medico", serviceUrl: "api/cronapi/crud/app.entity.Medico", serviceUrlODATA: "/api/cronapi/odata/v2/app/Medico" };
 window.dataSourceMap["app.query830035"] = { customId: "query830035", serviceUrl: "api/cronapi/odata/v2/app/query830035/", serviceUrlODATA: "/api/cronapi/odata/v2/app/query830035" };
 window.dataSourceMap["app.ListaDiaSemana"] = { customId: "ListaDiaSemana", serviceUrl: "api/cronapi/odata/v2/app/ListaDiaSemana/", serviceUrlODATA: "/api/cronapi/odata/v2/app/ListaDiaSemana" };
+window.dataSourceMap["app.query850469"] = { customId: "query850469", serviceUrl: "api/cronapi/odata/v2/app/query850469/", serviceUrlODATA: "/api/cronapi/odata/v2/app/query850469" };
 window.dataSourceMap["app.query610058"] = { customId: "query610058", serviceUrl: "api/cronapi/odata/v2/app/query610058/", serviceUrlODATA: "/api/cronapi/odata/v2/app/query610058" };
 window.dataSourceMap["app.UserLog"] = { customId: "UserLog", serviceUrl: "api/cronapi/odata/v2/UserLog/", serviceUrlODATA: "/api/cronapi/odata/v2/app/UserLog" };
 window.dataSourceMap["app.query636819"] = { customId: "query636819", serviceUrl: "api/cronapi/odata/v2/query636819/", serviceUrlODATA: "/api/cronapi/odata/v2/app/query636819" };
