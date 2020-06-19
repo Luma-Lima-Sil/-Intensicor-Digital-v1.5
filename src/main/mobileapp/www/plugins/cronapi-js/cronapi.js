@@ -3400,7 +3400,7 @@ if (!window.fixedTimeZone) {
    * @returns {ObjectType.VOID}
    */
   this.cronapi.cordova.device.getFirebaseNotificationData = function(success,error){
-    function onDeviceReady() { window.FirebasePlugin.onNotificationOpen(function(notification) {
+    function onDeviceReady() { window.FirebasePlugin.onMessageReceived(function(notification) {
       success(notification);
     }, function(err) {
       error(err);
