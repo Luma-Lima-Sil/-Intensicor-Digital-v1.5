@@ -18,6 +18,7 @@ public class SecurityPermission implements Permission {
   public void loadSecurityPermission(HttpSecurity http) throws Exception {
 
     // public
+  	http.authorizeRequests().antMatchers("/Imagens/**").permitAll();
   	http.authorizeRequests().antMatchers("/api/cronapi/**").permitAll();
   	http.authorizeRequests().antMatchers("/auth/**").permitAll();
   	http.authorizeRequests().antMatchers("/components/**").permitAll();

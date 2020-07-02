@@ -1,9 +1,9 @@
 {
-  "ReportGuid": "f346734e9f1195e1e7552365e14cbe20",
+  "ReportGuid": "6e76009cf2cf873b91f7d6081d2ab8ea",
   "ReportName": "Report",
   "ReportAlias": "Report",
-  "ReportCreated": "/Date(1576003915000-0300)/",
-  "ReportChanged": "/Date(1576003915000-0300)/",
+  "ReportCreated": "/Date(1575982315000-0300)/",
+  "ReportChanged": "/Date(1575982315000-0300)/",
   "EngineVersion": "EngineV2",
   "CalculationMode": "Interpretation",
   "ReportUnit": "Centimeters",
@@ -301,7 +301,7 @@
         "4": {
           "Ident": "StiGroupFooterBand",
           "Name": "GroupFooterBand2",
-          "ClientRectangle": "0,7.2,19,0.8",
+          "ClientRectangle": "0,7.2,19,1",
           "Interaction": {
             "Ident": "StiInteraction"
           },
@@ -315,7 +315,7 @@
               "CanShrink": true,
               "CanGrow": true,
               "GrowToHeight": true,
-              "ClientRectangle": "10.8,0.2,5.2,0.6",
+              "ClientRectangle": "10.8,0.4,5.2,0.6",
               "Interaction": {
                 "Ident": "StiInteraction"
               },
@@ -337,7 +337,7 @@
               "CanShrink": true,
               "CanGrow": true,
               "GrowToHeight": true,
-              "ClientRectangle": "16,0.2,3,0.6",
+              "ClientRectangle": "16,0.4,3,0.6",
               "Interaction": {
                 "Ident": "StiInteraction"
               },
@@ -370,7 +370,7 @@
           "Ident": "StiColumnFooterBand",
           "Name": "ColumnFooterBand1",
           "CanShrink": true,
-          "ClientRectangle": "0,8.8,19,1",
+          "ClientRectangle": "0,9,19,1",
           "Interaction": {
             "Ident": "StiInteraction"
           },

@@ -2,8 +2,8 @@
   "ReportGuid": "dcfd1c5f2818995b239b5663f66b9070",
   "ReportName": "Report",
   "ReportAlias": "Report",
-  "ReportCreated": "/Date(1576068715000-0300)/",
-  "ReportChanged": "/Date(1576068715000-0300)/",
+  "ReportCreated": "/Date(1576025515000-0300)/",
+  "ReportChanged": "/Date(1576025515000-0300)/",
   "EngineVersion": "EngineV2",
   "CalculationMode": "Interpretation",
   "ReportUnit": "Centimeters",
@@ -89,7 +89,7 @@
                 "Ident": "StiInteraction"
               },
               "Text": {
-                "Value": "Plantão Médico CTI A,B e D"
+                "Value": "Plantão Médico CTI A, B, C e D"
               },
               "AutoWidth": true,
               "HorAlignment": "Center",

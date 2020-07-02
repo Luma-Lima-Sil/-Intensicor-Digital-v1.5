@@ -2,8 +2,8 @@
   "ReportGuid": "50fee25831a20d0177af1d22d4098df9",
   "ReportName": "Report",
   "ReportAlias": "Report",
-  "ReportCreated": "/Date(1575982315000-0300)/",
-  "ReportChanged": "/Date(1575982315000-0300)/",
+  "ReportCreated": "/Date(1575939115000-0300)/",
+  "ReportChanged": "/Date(1575939115000-0300)/",
   "EngineVersion": "EngineV2",
   "CalculationMode": "Interpretation",
   "ReportUnit": "Centimeters",
@@ -89,7 +89,7 @@
                 "Ident": "StiInteraction"
               },
               "Text": {
-                "Value": "Plantão Médico Por Periodo CTI's A, B e D"
+                "Value": "Plantão Médico Por Periodo CTI C"
               },
               "AutoWidth": true,
               "HorAlignment": "Center",
