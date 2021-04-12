@@ -56,6 +56,13 @@ public class Local_Plantao implements Serializable {
   private Hospitais hospitais;
 
   /**
+  * @generated
+  */
+  @Column(name = "cnt_plantao", nullable = true, unique = false, precision=5, scale=4, insertable=true, updatable=true)
+  
+  private java.lang.Double cnt_plantao;
+
+  /**
    * Construtor
    * @generated
    */
@@ -140,6 +147,26 @@ public class Local_Plantao implements Serializable {
    */
   public Local_Plantao setHospitais(Hospitais hospitais){
     this.hospitais = hospitais;
+    return this;
+  }
+
+  /**
+   * Obtém cnt_plantao
+   * return cnt_plantao
+   * @generated
+   */
+  
+  public java.lang.Double getCnt_plantao(){
+    return this.cnt_plantao;
+  }
+
+  /**
+   * Define cnt_plantao
+   * @param cnt_plantao cnt_plantao
+   * @generated
+   */
+  public Local_Plantao setCnt_plantao(java.lang.Double cnt_plantao){
+    this.cnt_plantao = cnt_plantao;
     return this;
   }
 

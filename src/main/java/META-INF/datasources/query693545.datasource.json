@@ -1,0 +1,95 @@
+{
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "FuncionarioLogado",
+  "defaultValues": {},
+  "defaultValuesProperties": {},
+  "entityFullName": "app.entity.User",
+  "entitySimpleName": "User",
+  "errorHandles": {},
+  "events": {},
+  "query": {
+    "isEmpty": false,
+    "isRawSql": false,
+    "isValid": true,
+    "multiTenant": false,
+    "operationType": "object",
+    "paginatorAutomatic": false,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [
+        {
+          "field": "u.login",
+          "id": "u.login",
+          "input": "text",
+          "operator": "equal",
+          "type": "string",
+          "value": ":login",
+          "valueIsField": false
+        }
+      ],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "u",
+        "entity": "User",
+        "namespace": "app.entity.User"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rulesSelect": [
+      {
+        "field": "u",
+        "func": "get",
+        "type": "string"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "FuncionarioLogado",
+  "queryParamsValues": [
+    {
+      "fieldName": "login",
+      "fieldValue": {
+        "blocklyClass": "blockly.MedLogado",
+        "blocklyJson": {
+          "language": "java",
+          "methods": [
+            {
+              "hasReturn": "true",
+              "name": "medLogado",
+              "params": []
+            },
+            {
+              "hasReturn": "true",
+              "name": "UserLogado",
+              "params": []
+            }
+          ],
+          "namespace": "blockly.MedLogado",
+          "sourcePath": "src/main/java/blockly/MedLogado.blockly"
+        },
+        "blocklyLanguage": "java",
+        "blocklyMethod": "medLogado",
+        "blocklyParams": [],
+        "type": "server"
+      }
+    }
+  ],
+  "security": {},
+  "serviceUrl": "api/cronapi/odata/v2/query693545/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": true,
+    "DELETE": true,
+    "FILTER": true,
+    "GET": true,
+    "POST": true,
+    "PUT": true
+  }
+}

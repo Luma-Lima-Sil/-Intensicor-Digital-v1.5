@@ -1,0 +1,170 @@
+{
+  "baseEntity": null,
+  "blockly": null,
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "query60893",
+  "defaultValues": {
+    "actions": null,
+    "cd_corsemana_age": null,
+    "cd_status_age": null,
+    "color": null,
+    "corSemana": null,
+    "draggable": null,
+    "dt_agenda_age": null,
+    "endsAt": null,
+    "horario_Escala": null,
+    "id": null,
+    "local_Plantao": null,
+    "medico": null,
+    "qt_mudancas_age": null,
+    "resizable": null,
+    "responsible": null,
+    "startsAt": null
+  },
+  "defaultValuesProperties": {
+    "actions": null,
+    "cd_corsemana_age": null,
+    "cd_status_age": null,
+    "color": null,
+    "corSemana": null,
+    "draggable": null,
+    "dt_agenda_age": null,
+    "endsAt": null,
+    "horario_Escala": null,
+    "id": null,
+    "local_Plantao": null,
+    "medico": null,
+    "qt_mudancas_age": null,
+    "resizable": null,
+    "responsible": null,
+    "startsAt": null
+  },
+  "entityFullName": "app.entity.Agenda",
+  "entitySimpleName": "Agenda",
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": null,
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "onGetData": null,
+    "onNavigate": null
+  },
+  "query": {
+    "isEmpty": false,
+    "isRawSql": false,
+    "isValid": true,
+    "multiTenant": false,
+    "operationType": "object",
+    "pagination": false,
+    "paginatorAutomatic": false,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "a",
+        "entity": "Agenda",
+        "name": "Agenda",
+        "namespace": "app.entity.Agenda"
+      }
+    ],
+    "rulesGroupBy": [
+      {
+        "field": "a.medico.nome_med"
+      }
+    ],
+    "rulesHaving": [],
+    "rulesOrderBy": [
+      {
+        "field": "a.medico.nome_med",
+        "func": "get",
+        "order": "asc"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "field": "a.dt_agenda_age",
+        "func": "get",
+        "type": "date"
+      },
+      {
+        "field": "a.horario_Escala",
+        "func": "get",
+        "type": "string"
+      },
+      {
+        "field": "a.horario_Escala.qt_horas_hre",
+        "func": "sum",
+        "type": "integer"
+      },
+      {
+        "field": "a.medico.nome_med",
+        "func": "get",
+        "type": "string"
+      },
+      {
+        "field": "a.local_Plantao",
+        "func": "get",
+        "type": "string"
+      },
+      {
+        "field": "a.local_Plantao.nm_local_lpl",
+        "func": "get",
+        "type": "string"
+      },
+      {
+        "field": "a.horario_Escala.qt_horas_hre",
+        "func": "get",
+        "type": "integer"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "HoraPlantao",
+  "queryParamsValues": [],
+  "security": {
+    "actions": null,
+    "cd_corsemana_age": null,
+    "cd_status_age": null,
+    "color": null,
+    "corSemana": null,
+    "draggable": null,
+    "dt_agenda_age": null,
+    "endsAt": null,
+    "horario_Escala": null,
+    "id": null,
+    "local_Plantao": null,
+    "medico": null,
+    "qt_mudancas_age": null,
+    "resizable": null,
+    "responsible": null,
+    "startsAt": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query60893/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": true,
+    "COUNTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "query319890",
+  "defaultValues": {},
+  "defaultValuesProperties": {},
+  "entityFullName": "app.entity.Agenda",
+  "entitySimpleName": "Agenda",
+  "errorHandles": {},
+  "events": {},
+  "query": {
+    "isEmpty": false,
+    "isRawSql": false,
+    "isValid": true,
+    "multiTenant": true,
+    "operationType": "object",
+    "paginatorAutomatic": false,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [
+        {
+          "field": "a.medico.id",
+          "id": "a.medico.id",
+          "input": "text",
+          "operator": "equal",
+          "type": "string",
+          "value": ":medicoId",
+          "valueIsField": false
+        }
+      ],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "a",
+        "entity": "Agenda",
+        "name": "Agenda",
+        "namespace": "app.entity.Agenda"
+      }
+    ],
+    "rulesGroupBy": [
+      {
+        "field": "a.dt_agenda_age"
+      }
+    ],
+    "rulesHaving": [],
+    "rulesOrderBy": [
+      {
+        "field": "a.dt_agenda_age",
+        "func": "get",
+        "order": "asc"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "field": "a.dt_agenda_age",
+        "func": "get",
+        "type": "date"
+      },
+      {
+        "field": "a.local_Plantao",
+        "func": "get",
+        "type": "string"
+      },
+      {
+        "field": "a.horario_Escala",
+        "func": "get",
+        "type": "string"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "listaPlantoesMedico",
+  "queryParamsValues": [
+    {
+      "fieldName": "medicoId",
+      "fieldValue": ""
+    }
+  ],
+  "security": {},
+  "serviceUrl": "api/cronapi/odata/v2/query319890/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": true,
+    "DELETE": true,
+    "FILTER": true,
+    "GET": true,
+    "POST": true,
+    "PUT": true
+  }
+}

@@ -98,5 +98,6 @@
   "Home.view.NewPasswordCanNotBeEmpty": "New password can not be empty.",
   "Home.view.ConfirmationPasswordCanNotBeEmpty": "Confirmation can not be empty.",
   "Servicos": "Work",
-  "Usuario": "Usuário"
+  "Usuario": "Usuário",
+  "Relatorios": "Reports"
 }

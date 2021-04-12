@@ -1,0 +1,128 @@
+{
+  "baseEntity": null,
+  "blockly": null,
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "query377132",
+  "defaultValues": {
+    "agenda": null,
+    "cd_status_mud": null,
+    "dt_solicitao_mud": null,
+    "horario_Escala": null,
+    "id": null,
+    "medicoDest": null,
+    "medicoSolic": null
+  },
+  "defaultValuesProperties": {
+    "agenda": null,
+    "cd_status_mud": null,
+    "dt_solicitao_mud": null,
+    "horario_Escala": null,
+    "id": null,
+    "medicoDest": null,
+    "medicoSolic": null
+  },
+  "entityFullName": "app.entity.Solicitacao_Mudanca",
+  "entitySimpleName": "Solicitacao_Mudanca",
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": null,
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "onGetData": null,
+    "onNavigate": null
+  },
+  "query": {
+    "isEmpty": false,
+    "isRawSql": false,
+    "isValid": true,
+    "multiTenant": false,
+    "operationType": "object",
+    "pagination": false,
+    "paginatorAutomatic": false,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "s",
+        "entity": "Solicitacao_Mudanca",
+        "namespace": "app.entity.Solicitacao_Mudanca"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [
+      {
+        "field": "s.medicoSolic.nome_med",
+        "func": "get",
+        "order": "asc"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "field": "s.medicoSolic.nome_med",
+        "func": "get",
+        "type": "string"
+      },
+      {
+        "field": "s.dt_solicitao_mud",
+        "func": "get",
+        "type": "date"
+      },
+      {
+        "field": "s.agenda.dt_agenda_age",
+        "func": "get",
+        "type": "date"
+      },
+      {
+        "field": "s.medicoDest.nome_med",
+        "func": "get",
+        "type": "string"
+      },
+      {
+        "field": "s.agenda.local_Plantao.nm_local_lpl",
+        "func": "get",
+        "type": "string"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "SoliMudanca",
+  "queryParamsValues": [],
+  "security": {
+    "agenda": null,
+    "cd_status_mud": null,
+    "dt_solicitao_mud": null,
+    "horario_Escala": null,
+    "id": null,
+    "medicoDest": null,
+    "medicoSolic": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query377132/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": true,
+    "COUNTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null
+  }
+}

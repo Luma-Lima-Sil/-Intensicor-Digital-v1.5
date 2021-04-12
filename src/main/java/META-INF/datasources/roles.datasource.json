@@ -1,0 +1,29 @@
+{
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "customId": "roles",
+  "defaultValues": {},
+  "entityFullName": "app.entity.Role",
+  "entitySimpleName": "Role",
+  "errorHandles": {},
+  "events": {},
+  "query": "select o.id from Role o where o.user.login \u003d :login",
+  "queryName": "Obter Autorização",
+  "queryParamsValues": [
+    {
+      "fieldName": "login",
+      "fieldValue": ""
+    }
+  ],
+  "screen": "",
+  "security": {},
+  "serviceUrl": "api/cronapi/query/roles/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "DELETE": false,
+    "FILTER": true,
+    "GET": false,
+    "POST": false,
+    "PUT": false
+  }
+}

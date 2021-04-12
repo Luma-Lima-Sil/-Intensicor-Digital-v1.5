@@ -1,0 +1,105 @@
+{
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "query636819",
+  "defaultValues": {},
+  "defaultValuesProperties": {},
+  "entityFullName": "app.entity.Solicitacao_Mudanca",
+  "entitySimpleName": "Solicitacao_Mudanca",
+  "errorHandles": {},
+  "events": {},
+  "query": {
+    "isEmpty": false,
+    "isRawSql": false,
+    "isValid": true,
+    "multiTenant": true,
+    "operationType": "object",
+    "paginatorAutomatic": false,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [
+        {
+          "field": "s.cd_status_mud",
+          "id": "s.cd_status_mud",
+          "input": "text",
+          "operator": "equal",
+          "type": "integer",
+          "value": "0",
+          "valueIsField": false
+        },
+        {
+          "field": "s.medicoDest.user.login",
+          "id": "s.medicoDest.user.login",
+          "input": "text",
+          "operator": "equal",
+          "type": "string",
+          "value": ":medicoDestUserLogin",
+          "valueIsField": false
+        }
+      ],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "s",
+        "entity": "Solicitacao_Mudanca",
+        "namespace": "app.entity.Solicitacao_Mudanca"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [
+      {
+        "field": "s.agenda.dt_agenda_age",
+        "func": "get",
+        "order": "desc"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "field": "s",
+        "func": "get",
+        "type": "string"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "Solicitação Mudanca",
+  "queryParamsValues": [
+    {
+      "fieldName": "medicoDestUserLogin",
+      "fieldValue": {
+        "blocklyClass": "blockly.Usuario",
+        "blocklyJson": {
+          "language": "java",
+          "methods": [
+            {
+              "hasReturn": "true",
+              "name": "obterLogin",
+              "params": []
+            }
+          ],
+          "namespace": "blockly.Usuario",
+          "sourcePath": "src/main/java/blockly/Usuario.blockly"
+        },
+        "blocklyLanguage": "java",
+        "blocklyMethod": "obterLogin",
+        "blocklyParams": [],
+        "type": "server"
+      }
+    }
+  ],
+  "security": {},
+  "serviceUrl": "api/cronapi/odata/v2/query636819/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": true,
+    "DELETE": true,
+    "FILTER": true,
+    "GET": true,
+    "POST": true,
+    "PUT": true
+  }
+}

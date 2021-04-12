@@ -1,0 +1,153 @@
+{
+  "baseEntity": "app.entity.Solicitacao_Mudanca",
+  "blockly": {
+    "blocklyCOUNTMethod": "enviarNotificacao",
+    "blocklyClass": "blockly.SolicitacaoMudanca",
+    "blocklyDELETEMethod": "default",
+    "blocklyFILTERMethod": "default",
+    "blocklyGETMethod": "enviarNotificacao",
+    "blocklyJson": {
+      "language": "java",
+      "methods": [
+        {
+          "hasReturn": "true",
+          "name": "confirmar",
+          "params": [
+            "idSolicitacaoMudanca"
+          ]
+        },
+        {
+          "hasReturn": "true",
+          "name": "recusar",
+          "params": [
+            "idSolicitacaoMudanca"
+          ]
+        },
+        {
+          "hasReturn": "true",
+          "name": "existePedido",
+          "params": []
+        },
+        {
+          "hasReturn": "false",
+          "name": "enviarNotificacao",
+          "params": [
+            "solicitacaoMudanca",
+            "aceito"
+          ]
+        }
+      ],
+      "namespace": "blockly.SolicitacaoMudanca",
+      "sourcePath": "src/main/java/blockly/SolicitacaoMudanca.blockly"
+    },
+    "blocklyLanguage": "java",
+    "blocklyMethod": "enviarNotificacao",
+    "blocklyPOSTMethod": "default",
+    "blocklyPUTMethod": "default",
+    "blocklyParams": [],
+    "type": "server"
+  },
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "query676712",
+  "defaultValues": {
+    "agenda": null,
+    "cd_status_mud": null,
+    "dt_solicitao_mud": null,
+    "horario_Escala": null,
+    "id": null,
+    "medicoDest": null,
+    "medicoSolic": null
+  },
+  "defaultValuesProperties": {
+    "agenda": {
+      "key": false,
+      "nullable": false,
+      "type": "Agenda"
+    },
+    "cd_status_mud": {
+      "key": false,
+      "nullable": false,
+      "type": "Integer"
+    },
+    "dt_solicitao_mud": {
+      "key": false,
+      "nullable": false,
+      "type": "Date"
+    },
+    "horario_Escala": {
+      "key": false,
+      "nullable": false,
+      "type": "Horario_Escala"
+    },
+    "id": {
+      "key": true,
+      "nullable": false,
+      "type": "String"
+    },
+    "medicoDest": {
+      "key": false,
+      "nullable": false,
+      "type": "Medico"
+    },
+    "medicoSolic": {
+      "key": false,
+      "nullable": false,
+      "type": "Medico"
+    }
+  },
+  "entityFullName": null,
+  "entitySimpleName": null,
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": null,
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "onGetData": null,
+    "onNavigate": null
+  },
+  "query": "",
+  "queryName": "ExSolMudanca",
+  "queryParamsValues": [
+    {
+      "fieldName": "solicitacaoMudanca",
+      "fieldValue": ""
+    },
+    {
+      "fieldName": "aceito",
+      "fieldValue": ""
+    }
+  ],
+  "security": {
+    "agenda": null,
+    "cd_status_mud": null,
+    "dt_solicitao_mud": null,
+    "horario_Escala": null,
+    "id": null,
+    "medicoDest": null,
+    "medicoSolic": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query676712/",
+  "sourceType": "blockly",
+  "verbs": {
+    "COUNT": true,
+    "COUNTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null
+  }
+}

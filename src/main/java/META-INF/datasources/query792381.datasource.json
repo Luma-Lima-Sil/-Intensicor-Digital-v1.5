@@ -1,0 +1,68 @@
+{
+  "blockly": {
+    "blocklyCOUNTMethod": "obterAnos",
+    "blocklyClass": "blockly.Agenda",
+    "blocklyDELETEMethod": "obterAnos",
+    "blocklyFILTERMethod": "obterAnos",
+    "blocklyGETMethod": "obterAnos",
+    "blocklyJson": {
+      "class": "blockly.Agenda",
+      "language": "java",
+      "methods": [
+        {
+          "hasReturn": "true",
+          "name": "obterAnos",
+          "params": []
+        },
+        {
+          "hasReturn": "true",
+          "name": "obterMeses",
+          "params": [
+            "anoParam"
+          ]
+        }
+      ],
+      "namespace": "blockly.Agenda",
+      "sourcePath": "src/main/java/blockly/Agenda.blockly"
+    },
+    "blocklyLanguage": "java",
+    "blocklyMethod": "obterAnos",
+    "blocklyPOSTMethod": "obterAnos",
+    "blocklyPUTMethod": "obterAnos",
+    "blocklyParams": [],
+    "type": "server"
+  },
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "comboAno",
+  "defaultValues": {},
+  "defaultValuesProperties": {
+    "id": {
+      "key": false,
+      "nullable": true,
+      "type": "String"
+    },
+    "value": {
+      "key": false,
+      "nullable": true,
+      "type": "String"
+    }
+  },
+  "errorHandles": {},
+  "events": {},
+  "query": "",
+  "queryName": "comboAno",
+  "queryParamsValues": [],
+  "security": {},
+  "serviceUrl": "api/cronapi/query/query792381/",
+  "sourceType": "blockly",
+  "verbs": {
+    "COUNT": true,
+    "DELETE": true,
+    "FILTER": true,
+    "GET": true,
+    "POST": true,
+    "PUT": true
+  }
+}

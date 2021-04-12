@@ -101,8 +101,8 @@ app.controller('CalendarCtrl', function($scope, moment, alert, calendarConfig, P
         };
         
         vm.currentEvent.convertDates  = {
-          inicio: moment(convertDate.inicio).format('dd/MM/yyyy'),
-          final: moment(convertDate.final).format('dd/MM/yyyy')
+          inicio: moment(convertDate.inicio).format('DD/MM/YYYY'),
+          final: moment(convertDate.final).format('DD/MM/YYYY')
         };
         
         angular.element('#plantaoModal').modal('show');

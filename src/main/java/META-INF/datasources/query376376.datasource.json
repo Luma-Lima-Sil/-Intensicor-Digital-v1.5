@@ -1,0 +1,32 @@
+{
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "consultaMedico",
+  "defaultValues": {},
+  "defaultValuesProperties": {},
+  "entityFullName": "app.entity.Medico",
+  "entitySimpleName": "Medico",
+  "errorHandles": {},
+  "events": {},
+  "query": {
+    "isEmpty": true,
+    "isRawSql": true,
+    "multiTenant": true,
+    "paginatorAutomatic": false,
+    "sqlContent": "select m.id, m.user.name, m.user.id from Medico m \nwhere m.user \u003c\u003e null \norder by m.user.name\n            "
+  },
+  "queryName": "Consulta Médico Plantão",
+  "queryParamsValues": [],
+  "security": {},
+  "serviceUrl": "api/cronapi/odata/v2/query376376/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": true,
+    "DELETE": true,
+    "FILTER": true,
+    "GET": true,
+    "POST": true,
+    "PUT": true
+  }
+}

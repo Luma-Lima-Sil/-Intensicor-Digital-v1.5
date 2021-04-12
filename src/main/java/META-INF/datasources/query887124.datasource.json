@@ -1,0 +1,241 @@
+{
+  "baseEntity": null,
+  "blockly": null,
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "obterDadosAgenda",
+  "defaultValues": {
+    "actions": null,
+    "cd_corsemana_age": null,
+    "cd_status_age": null,
+    "color": null,
+    "corSemana": null,
+    "diaSemana": null,
+    "draggable": null,
+    "dt_agenda_age": null,
+    "endsAt": null,
+    "horario_Escala": null,
+    "id": null,
+    "local_Plantao": null,
+    "medico": null,
+    "medicoAnterior": null,
+    "qt_mudancas_age": null,
+    "resizable": null,
+    "responsible": null,
+    "startsAt": null
+  },
+  "defaultValuesProperties": {
+    "actions": null,
+    "cd_corsemana_age": null,
+    "cd_status_age": null,
+    "color": null,
+    "corSemana": null,
+    "diaSemana": null,
+    "draggable": null,
+    "dt_agenda_age": null,
+    "endsAt": null,
+    "horario_Escala": null,
+    "id": null,
+    "local_Plantao": null,
+    "medico": null,
+    "medicoAnterior": null,
+    "qt_mudancas_age": null,
+    "resizable": null,
+    "responsible": null,
+    "startsAt": null
+  },
+  "entityFullName": "app.entity.Agenda",
+  "entitySimpleName": "Agenda",
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": null,
+    "beforeInsert": null,
+    "beforeUpdate": {
+      "blocklyClass": "blockly.EditarAgenda",
+      "blocklyJson": {
+        "language": "java",
+        "methods": [
+          {
+            "hasReturn": "true",
+            "name": "EditarAgendaRetroativa",
+            "params": [
+              "entidade\u0026lt;app.entity.Agenda\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "false",
+            "name": "AtualizarFonteDados",
+            "params": []
+          },
+          {
+            "hasReturn": "true",
+            "name": "SalvarAgendaRetroativa",
+            "params": []
+          },
+          {
+            "hasReturn": "false",
+            "name": "RetornarMedicoAtual",
+            "params": []
+          }
+        ],
+        "namespace": "blockly.EditarAgenda",
+        "sourcePath": "src/main/java/blockly/EditarAgenda.blockly"
+      },
+      "blocklyLanguage": "java",
+      "blocklyMethod": "SalvarAgendaRetroativa",
+      "blocklyParams": [],
+      "type": "server"
+    },
+    "onGetData": null,
+    "onNavigate": null
+  },
+  "query": {
+    "isEmpty": false,
+    "isRawSql": false,
+    "isValid": true,
+    "multiTenant": false,
+    "operationType": "object",
+    "pagination": false,
+    "paginatorAutomatic": false,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "a",
+        "entity": "Agenda",
+        "name": "Agenda",
+        "namespace": "app.entity.Agenda"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rulesSelect": [
+      {
+        "field": "a.id",
+        "func": "get",
+        "type": "string"
+      },
+      {
+        "field": "a.horario_Escala",
+        "func": "get",
+        "type": "string"
+      },
+      {
+        "field": "a.local_Plantao",
+        "func": "get",
+        "type": "string"
+      },
+      {
+        "field": "a.medico",
+        "func": "get",
+        "type": "string"
+      },
+      {
+        "field": "a.medico.nome_med",
+        "func": "get",
+        "type": "string"
+      },
+      {
+        "field": "a.medico.nr_cpf_med",
+        "func": "get",
+        "type": "string"
+      },
+      {
+        "field": "a.horario_Escala.nm_horario_hre",
+        "func": "get",
+        "type": "string"
+      },
+      {
+        "field": "a.local_Plantao.cd_codigo_lpl",
+        "func": "get",
+        "type": "string"
+      },
+      {
+        "field": "a.cd_corsemana_age",
+        "func": "get",
+        "type": "integer"
+      },
+      {
+        "field": "a.cd_status_age",
+        "func": "get",
+        "type": "integer"
+      },
+      {
+        "field": "a.dt_agenda_age",
+        "func": "get",
+        "type": "date"
+      },
+      {
+        "field": "a.qt_mudancas_age",
+        "func": "get",
+        "type": "integer"
+      },
+      {
+        "field": "a.local_Plantao.nm_local_lpl",
+        "func": "get",
+        "type": "string"
+      },
+      {
+        "field": "a.corSemana",
+        "func": "get",
+        "type": "string"
+      },
+      {
+        "field": "a.startsAt",
+        "func": "get",
+        "type": "date"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "obterDadosAgenda",
+  "queryParamsValues": [],
+  "security": {
+    "actions": null,
+    "cd_corsemana_age": null,
+    "cd_status_age": null,
+    "color": null,
+    "corSemana": null,
+    "diaSemana": null,
+    "draggable": null,
+    "dt_agenda_age": null,
+    "endsAt": null,
+    "horario_Escala": null,
+    "id": null,
+    "local_Plantao": null,
+    "medico": null,
+    "medicoAnterior": null,
+    "qt_mudancas_age": null,
+    "resizable": null,
+    "responsible": null,
+    "startsAt": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query887124/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": true,
+    "COUNTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null
+  }
+}
