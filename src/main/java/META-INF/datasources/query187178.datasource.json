@@ -1,0 +1,57 @@
+{
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "AgendaNome",
+  "defaultValues": {},
+  "defaultValuesProperties": {},
+  "entityFullName": "app.entity.Agenda",
+  "entitySimpleName": "Agenda",
+  "errorHandles": {},
+  "events": {},
+  "query": {
+    "isEmpty": false,
+    "isRawSql": false,
+    "isValid": true,
+    "multiTenant": true,
+    "operationType": "object",
+    "paginatorAutomatic": false,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "a",
+        "entity": "Agenda",
+        "namespace": "app.entity.Agenda"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rulesSelect": [
+      {
+        "field": "a.medico.user.name",
+        "func": "get",
+        "type": "string"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "AgendaNome",
+  "queryParamsValues": [],
+  "security": {},
+  "serviceUrl": "api/cronapi/odata/v2/query187178/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": true,
+    "DELETE": true,
+    "FILTER": true,
+    "GET": true,
+    "POST": true,
+    "PUT": true
+  }
+}

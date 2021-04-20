@@ -1,0 +1,162 @@
+{
+  "baseEntity": null,
+  "blockly": null,
+  "calcFields": {
+    "HorasCTI": {
+      "blocklyCOUNTMethod": null,
+      "blocklyClass": "blockly.HorasporCTI",
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyGETMethod": null,
+      "blocklyJson": {
+        "language": "java",
+        "methods": [
+          {
+            "hasReturn": "true",
+            "name": "ExecutarHorasporCTI",
+            "params": [
+              "Entidade\u0026lt;app.entity.Agenda\u0026gt;"
+            ]
+          }
+        ],
+        "namespace": "blockly.HorasporCTI",
+        "sourcePath": "src/main/java/blockly/HorasporCTI.blockly"
+      },
+      "blocklyLanguage": "java",
+      "blocklyMethod": "ExecutarHorasporCTI",
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyParams": [
+        {
+          "name": "Entidade\u0026lt;app.entity.Agenda\u0026gt;",
+          "type": "CUSTOM",
+          "value": "null"
+        }
+      ],
+      "type": "server"
+    }
+  },
+  "calcFieldsProperties": {
+    "HorasCTI": {
+      "type": "String"
+    }
+  },
+  "calcFieldsSecurity": {
+    "HorasCTI": null
+  },
+  "customId": "query765109",
+  "defaultValues": {
+    "actions": null,
+    "cd_corsemana_age": null,
+    "cd_status_age": null,
+    "color": null,
+    "corSemana": null,
+    "draggable": null,
+    "dt_agenda_age": null,
+    "endsAt": null,
+    "horario_Escala": null,
+    "id": null,
+    "local_Plantao": null,
+    "medico": null,
+    "qt_mudancas_age": null,
+    "resizable": null,
+    "responsible": null,
+    "startsAt": null
+  },
+  "defaultValuesProperties": {
+    "actions": null,
+    "cd_corsemana_age": null,
+    "cd_status_age": null,
+    "color": null,
+    "corSemana": null,
+    "draggable": null,
+    "dt_agenda_age": null,
+    "endsAt": null,
+    "horario_Escala": null,
+    "id": null,
+    "local_Plantao": null,
+    "medico": null,
+    "qt_mudancas_age": null,
+    "resizable": null,
+    "responsible": null,
+    "startsAt": null
+  },
+  "entityFullName": "app.entity.Agenda",
+  "entitySimpleName": "Agenda",
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": null,
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "onGetData": null,
+    "onNavigate": null
+  },
+  "query": {
+    "isValid": true,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "a",
+        "entity": "Agenda",
+        "name": "Agenda",
+        "namespace": "app.entity.Agenda"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rulesSelect": [
+      {
+        "field": "a",
+        "func": "get"
+      }
+    ]
+  },
+  "queryName": "HorasCTI",
+  "queryParamsValues": [],
+  "security": {
+    "actions": null,
+    "cd_corsemana_age": null,
+    "cd_status_age": null,
+    "color": null,
+    "corSemana": null,
+    "draggable": null,
+    "dt_agenda_age": null,
+    "endsAt": null,
+    "horario_Escala": null,
+    "id": null,
+    "local_Plantao": null,
+    "medico": null,
+    "qt_mudancas_age": null,
+    "resizable": null,
+    "responsible": null,
+    "startsAt": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query765109/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": true,
+    "COUNTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null
+  }
+}

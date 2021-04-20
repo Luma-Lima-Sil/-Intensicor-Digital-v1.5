@@ -1,0 +1,63 @@
+{
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "PlantaoLocal",
+  "defaultValues": {},
+  "defaultValuesProperties": {},
+  "entityFullName": "app.entity.Local_Plantao",
+  "entitySimpleName": "Local_Plantao",
+  "errorHandles": {},
+  "events": {},
+  "query": {
+    "isEmpty": false,
+    "isRawSql": false,
+    "isValid": true,
+    "multiTenant": true,
+    "operationType": "object",
+    "paginatorAutomatic": false,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "l",
+        "entity": "Local_Plantao",
+        "name": "Local_Plantao",
+        "namespace": "app.entity.Local_Plantao"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rulesSelect": [
+      {
+        "field": "l.id",
+        "func": "get",
+        "type": "string"
+      },
+      {
+        "field": "l.nm_local_lpl",
+        "func": "get",
+        "type": "string"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "PlantaoLocal",
+  "queryParamsValues": [],
+  "security": {},
+  "serviceUrl": "api/cronapi/odata/v2/query819447/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": true,
+    "DELETE": true,
+    "FILTER": true,
+    "GET": true,
+    "POST": true,
+    "PUT": true
+  }
+}

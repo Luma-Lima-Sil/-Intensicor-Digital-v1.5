@@ -1,0 +1,89 @@
+{
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "LoginMobile",
+  "defaultValues": {},
+  "defaultValuesProperties": {},
+  "entityFullName": "app.entity.User",
+  "entitySimpleName": "User",
+  "errorHandles": {},
+  "events": {},
+  "query": {
+    "isEmpty": false,
+    "isRawSql": false,
+    "isValid": true,
+    "multiTenant": false,
+    "operationType": "object",
+    "paginatorAutomatic": false,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [
+        {
+          "field": "u.login",
+          "id": "u.login",
+          "input": "text",
+          "operator": "equal",
+          "type": "string",
+          "value": ":login",
+          "valueIsField": false
+        }
+      ],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "u",
+        "entity": "User",
+        "namespace": "app.entity.User"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rulesSelect": [
+      {
+        "field": "u",
+        "func": "get",
+        "type": "string"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "LoginMobile",
+  "queryParamsValues": [
+    {
+      "fieldName": "login",
+      "fieldValue": {
+        "blocklyClass": "blockly.BuscarUserLogado",
+        "blocklyJson": {
+          "language": "java",
+          "methods": [
+            {
+              "hasReturn": "true",
+              "name": "ExecutarUserLogado",
+              "params": []
+            }
+          ],
+          "namespace": "blockly.BuscarUserLogado",
+          "sourcePath": "src/main/java/blockly/BuscarUserLogado.blockly"
+        },
+        "blocklyLanguage": "java",
+        "blocklyMethod": "ExecutarUserLogado",
+        "blocklyParams": [],
+        "type": "server"
+      }
+    }
+  ],
+  "security": {},
+  "serviceUrl": "api/cronapi/odata/v2/query230527/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "DELETE": true,
+    "FILTER": true,
+    "GET": true,
+    "POST": true,
+    "PUT": true
+  }
+}

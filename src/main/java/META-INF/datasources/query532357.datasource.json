@@ -1,0 +1,122 @@
+{
+  "baseEntity": "app.entity.Cor_Semana",
+  "blockly": {
+    "blocklyCOUNTMethod": "obterSemanas",
+    "blocklyClass": "blockly.Agenda",
+    "blocklyDELETEMethod": "default",
+    "blocklyFILTERMethod": "default",
+    "blocklyGETMethod": "obterSemanas",
+    "blocklyJson": {
+      "class": "blockly.Agenda",
+      "language": "java",
+      "methods": [
+        {
+          "hasReturn": "true",
+          "name": "obterAnos",
+          "params": []
+        },
+        {
+          "hasReturn": "true",
+          "name": "obterSemanas",
+          "params": []
+        },
+        {
+          "hasReturn": "true",
+          "name": "adicionarMes",
+          "params": [
+            "idMes",
+            "mesParam"
+          ]
+        },
+        {
+          "hasReturn": "true",
+          "name": "obterMeses",
+          "params": [
+            "anoParam"
+          ]
+        },
+        {
+          "hasReturn": "true",
+          "name": "inserirAgendamento",
+          "params": [
+            "param"
+          ]
+        },
+        {
+          "hasReturn": "true",
+          "name": "consultarAgendamento",
+          "params": [
+            "param"
+          ]
+        }
+      ],
+      "namespace": "blockly.Agenda",
+      "sourcePath": "src/main/java/blockly/Agenda.blockly"
+    },
+    "blocklyLanguage": "java",
+    "blocklyMethod": "obterSemanas",
+    "blocklyPOSTMethod": "default",
+    "blocklyPUTMethod": "default",
+    "blocklyParams": [],
+    "type": "server"
+  },
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "obterSemanas",
+  "defaultValues": {
+    "descricao": null,
+    "id": null
+  },
+  "defaultValuesProperties": {
+    "descricao": {
+      "key": false,
+      "nullable": true,
+      "type": "String"
+    },
+    "id": {
+      "key": true,
+      "nullable": false,
+      "type": "Integer"
+    }
+  },
+  "entityFullName": null,
+  "entitySimpleName": null,
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": null,
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "onGetData": null,
+    "onNavigate": null
+  },
+  "query": "",
+  "queryName": "obterSemanas",
+  "queryParamsValues": [],
+  "security": {
+    "descricao": null,
+    "id": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query532357/",
+  "sourceType": "blockly",
+  "verbs": {
+    "COUNT": true,
+    "COUNTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null
+  }
+}

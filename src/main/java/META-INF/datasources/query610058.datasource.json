@@ -1,0 +1,233 @@
+{
+  "baseEntity": "app.entity.Agenda",
+  "blockly": {
+    "blocklyCOUNTMethod": "ExecutarRelatorioCTI",
+    "blocklyClass": "blockly.RelatorioCTI",
+    "blocklyDELETEMethod": "default",
+    "blocklyFILTERMethod": "default",
+    "blocklyGETMethod": "ExecutarRelatorioCTI",
+    "blocklyJson": {
+      "class": "blockly.RelatorioCTI",
+      "language": "java",
+      "methods": [
+        {
+          "hasReturn": "true",
+          "name": "ExecutarRelatorioCTI",
+          "params": [
+            "Dados"
+          ]
+        }
+      ],
+      "namespace": "blockly.RelatorioCTI",
+      "sourcePath": "src/main/java/blockly/RelatorioCTI.blockly"
+    },
+    "blocklyLanguage": "java",
+    "blocklyMethod": "ExecutarRelatorioCTI",
+    "blocklyPOSTMethod": "default",
+    "blocklyPUTMethod": "default",
+    "blocklyParams": [
+      {
+        "name": "Dados",
+        "type": "CUSTOM",
+        "value": "data"
+      }
+    ]
+  },
+  "calcFields": {
+    "RelatorioHorasCTI": {
+      "blocklyCOUNTMethod": "ExecutarRelatorioCTI",
+      "blocklyClass": "blockly.RelatorioCTI",
+      "blocklyDELETEMethod": "default",
+      "blocklyFILTERMethod": "default",
+      "blocklyGETMethod": "ExecutarRelatorioCTI",
+      "blocklyJson": {
+        "language": "java",
+        "methods": [
+          {
+            "hasReturn": "true",
+            "name": "ExecutarRelatorioCTI",
+            "params": [
+              "Dados"
+            ]
+          }
+        ],
+        "namespace": "blockly.RelatorioCTI",
+        "sourcePath": "src/main/java/blockly/RelatorioCTI.blockly"
+      },
+      "blocklyLanguage": "java",
+      "blocklyMethod": "ExecutarRelatorioCTI",
+      "blocklyPOSTMethod": "default",
+      "blocklyPUTMethod": "default",
+      "blocklyParams": [
+        {
+          "name": "Dados",
+          "type": "CUSTOM",
+          "value": "null"
+        }
+      ],
+      "type": "server"
+    }
+  },
+  "calcFieldsProperties": {
+    "RelatorioHorasCTI": {
+      "type": "String"
+    }
+  },
+  "calcFieldsSecurity": {
+    "RelatorioHorasCTI": null
+  },
+  "customId": "query610058",
+  "defaultValues": {
+    "actions": null,
+    "cd_corsemana_age": null,
+    "cd_status_age": null,
+    "color": null,
+    "corSemana": null,
+    "draggable": null,
+    "dt_agenda_age": null,
+    "endsAt": null,
+    "horario_Escala": null,
+    "id": null,
+    "local_Plantao": null,
+    "medico": null,
+    "qt_mudancas_age": null,
+    "resizable": null,
+    "responsible": null,
+    "startsAt": null
+  },
+  "defaultValuesProperties": {
+    "actions": {
+      "key": false,
+      "nullable": true,
+      "type": "String"
+    },
+    "cd_corsemana_age": {
+      "key": false,
+      "nullable": true,
+      "type": "Integer"
+    },
+    "cd_status_age": {
+      "key": false,
+      "nullable": true,
+      "type": "Integer"
+    },
+    "color": {
+      "key": false,
+      "nullable": true,
+      "type": "String"
+    },
+    "corSemana": {
+      "key": false,
+      "nullable": false,
+      "type": "Cor_Semana"
+    },
+    "draggable": {
+      "key": false,
+      "nullable": true,
+      "type": "Boolean"
+    },
+    "dt_agenda_age": {
+      "key": false,
+      "nullable": false,
+      "type": "Date"
+    },
+    "endsAt": {
+      "key": false,
+      "nullable": true,
+      "type": "Date"
+    },
+    "horario_Escala": {
+      "key": false,
+      "nullable": false,
+      "type": "Horario_Escala"
+    },
+    "id": {
+      "key": true,
+      "nullable": false,
+      "type": "String"
+    },
+    "local_Plantao": {
+      "key": false,
+      "nullable": false,
+      "type": "Local_Plantao"
+    },
+    "medico": {
+      "key": false,
+      "nullable": false,
+      "type": "Medico"
+    },
+    "qt_mudancas_age": {
+      "key": false,
+      "nullable": true,
+      "type": "Integer"
+    },
+    "resizable": {
+      "key": false,
+      "nullable": true,
+      "type": "Boolean"
+    },
+    "responsible": {
+      "key": false,
+      "nullable": true,
+      "type": "Boolean"
+    },
+    "startsAt": {
+      "key": false,
+      "nullable": true,
+      "type": "Date"
+    }
+  },
+  "entityFullName": null,
+  "entitySimpleName": null,
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": null,
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "onGetData": null,
+    "onNavigate": null
+  },
+  "query": "",
+  "queryName": "RelatorioCTI",
+  "queryParamsValues": [],
+  "security": {
+    "actions": null,
+    "cd_corsemana_age": null,
+    "cd_status_age": null,
+    "color": null,
+    "corSemana": null,
+    "draggable": null,
+    "dt_agenda_age": null,
+    "endsAt": null,
+    "horario_Escala": null,
+    "id": null,
+    "local_Plantao": null,
+    "medico": null,
+    "qt_mudancas_age": null,
+    "resizable": null,
+    "responsible": null,
+    "startsAt": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query610058/",
+  "sourceType": "blockly",
+  "verbs": {
+    "COUNT": true,
+    "COUNTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null
+  }
+}

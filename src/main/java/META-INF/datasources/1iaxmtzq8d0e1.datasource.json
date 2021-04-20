@@ -1,0 +1,108 @@
+{
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "MedLogado",
+  "defaultValues": {
+    "cd_codigo_med": "null",
+    "cd_status_med": "null",
+    "ds_email_med": "null",
+    "ds_senha_med": "null",
+    "nm_completo_med": "null",
+    "nr_cpf_med": "null",
+    "nr_crm_med": "null",
+    "qt_hrfinanceiro_med": "null",
+    "qt_hrsupervisao_med": "null",
+    "user": "null"
+  },
+  "defaultValuesProperties": {},
+  "entityFullName": "app.entity.Medico",
+  "entitySimpleName": "Medico",
+  "errorHandles": {},
+  "events": {},
+  "query": {
+    "isEmpty": false,
+    "isRawSql": false,
+    "isValid": true,
+    "multiTenant": false,
+    "operationType": "object",
+    "paginatorAutomatic": false,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [
+        {
+          "field": "m.user.login",
+          "id": "m.user.login",
+          "input": "text",
+          "operator": "equal",
+          "type": "string",
+          "value": ":userLogin",
+          "valueIsField": false
+        }
+      ],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "m",
+        "entity": "Medico",
+        "namespace": "app.entity.Medico"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rulesSelect": [
+      {
+        "field": "m",
+        "func": "get",
+        "type": "string"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "MedLogado",
+  "queryParamsValues": [
+    {
+      "fieldName": "userLogin",
+      "fieldValue": {
+        "blocklyClass": "blockly.MedLogado",
+        "blocklyJson": {
+          "language": "java",
+          "methods": [
+            {
+              "hasReturn": "true",
+              "name": "medLogado",
+              "params": [
+                "Dados"
+              ]
+            }
+          ],
+          "namespace": "blockly.MedLogado",
+          "sourcePath": "src/main/java/blockly/MedLogado.blockly"
+        },
+        "blocklyLanguage": "java",
+        "blocklyMethod": "medLogado",
+        "blocklyParams": [
+          {
+            "name": "Dados",
+            "type": "CUSTOM",
+            "value": "null"
+          }
+        ],
+        "type": "server"
+      }
+    }
+  ],
+  "security": {},
+  "serviceUrl": "api/cronapi/odata/v2/1iaxmtzq8d0e1/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "DELETE": true,
+    "FILTER": true,
+    "GET": true,
+    "POST": true,
+    "PUT": true
+  }
+}

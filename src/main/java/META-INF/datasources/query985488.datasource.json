@@ -1,0 +1,69 @@
+{
+  "blockly": {
+    "blocklyCOUNTMethod": "obterMeses",
+    "blocklyClass": "blockly.Agenda",
+    "blocklyDELETEMethod": "obterMeses",
+    "blocklyFILTERMethod": "obterMeses",
+    "blocklyGETMethod": "obterMeses",
+    "blocklyJson": {
+      "language": "java",
+      "methods": [
+        {
+          "hasReturn": "true",
+          "name": "obterAnos",
+          "params": []
+        },
+        {
+          "hasReturn": "true",
+          "name": "adicionarMes",
+          "params": [
+            "idMes",
+            "mesParam"
+          ]
+        },
+        {
+          "hasReturn": "true",
+          "name": "obterMeses",
+          "params": [
+            "anoParam"
+          ]
+        }
+      ],
+      "namespace": "blockly.Agenda",
+      "sourcePath": "src/main/java/blockly/Agenda.blockly"
+    },
+    "blocklyLanguage": "java",
+    "blocklyMethod": "obterMeses",
+    "blocklyPOSTMethod": "obterMeses",
+    "blocklyPUTMethod": "obterMeses",
+    "blocklyParams": [],
+    "type": "server"
+  },
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "gridMes",
+  "defaultValues": {},
+  "defaultValuesProperties": {},
+  "errorHandles": {},
+  "events": {},
+  "query": "",
+  "queryName": "gridMes",
+  "queryParamsValues": [
+    {
+      "fieldName": "anoParam",
+      "fieldValue": ""
+    }
+  ],
+  "security": {},
+  "serviceUrl": "api/cronapi/query/query985488/",
+  "sourceType": "blockly",
+  "verbs": {
+    "COUNT": true,
+    "DELETE": true,
+    "FILTER": true,
+    "GET": true,
+    "POST": true,
+    "PUT": true
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "customId": "auth",
+  "defaultValues": {},
+  "entityFullName": "app.entity.User",
+  "entitySimpleName": "User",
+  "errorHandles": {},
+  "events": {},
+  "query": "select o from User o where o.login \u003d :login",
+  "queryName": "Autenticar",
+  "queryParamsValues": [
+    {
+      "fieldName": "login",
+      "fieldValue": ""
+    }
+  ],
+  "screen": "",
+  "security": {},
+  "serviceUrl": "api/cronapi/query/auth/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "DELETE": false,
+    "GET": false,
+    "POST": false,
+    "PUT": false
+  }
+}
